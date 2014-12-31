@@ -7,9 +7,9 @@ Usage:
 
 from setuptools import setup
 
-APP = ['syncany.py']
+APP = ['./gradle/osx/utility/Syncany.py']
 DATA_FILES = []
-OPTIONS = {'argv_emulation': True, 'iconfile': 'Syncany.icns'}
+OPTIONS = {'argv_emulation': True, 'iconfile': './gradle/osx/utility/Syncany.icns'}
 
 setup(
     app=APP,
