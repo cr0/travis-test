@@ -1,0 +1,8 @@
+language: java
+
+before_install:
+	# osx helper utility
+	- sudo apt-get install pip
+	- sudo pip install py2app
+	- python gradle/osx/utility/setup.py py2app
+	- tar cfvz src/main/resources/org/syncany/gui/helper/Syncany.app.tar.gz -C dist/ Syncany.app
