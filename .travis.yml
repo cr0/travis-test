@@ -12,5 +12,7 @@ before_install:
   - tar cfvz src/main/resources/org/syncany/gui/helper/Syncany.app.tar.gz -C dist/ Syncany.app
 
 install:
-  - ls -al .
   - find src/main/resources/org/syncany/gui/helper/
+
+after_success:
+  - shasum -p 256 src/main/resources/org/syncany/gui/helper/Syncany.app.tar.gz
