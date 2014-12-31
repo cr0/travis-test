@@ -4,6 +4,7 @@ notifications:
   - email: false
 
 before_install:
+  - mkdir -p src/main/resources/org/syncany/gui/helper/
   - ls -al .
 
 install:

@@ -8,4 +8,5 @@ before_install:
   - python --version && pip --version
   - sudo pip install --egg py2app
   - python gradle/osx/utility/setup.py py2app
+  - mkdir -p src/main/resources/org/syncany/gui/helper/
   - tar cfvz src/main/resources/org/syncany/gui/helper/Syncany.app.tar.gz -C dist/ Syncany.app
