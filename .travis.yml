@@ -1,6 +1,7 @@
-language: java
-os:
-  - osx
+language: objective-c
+
+notifications:
+  - email: false
 
 before_install:
   # osx helper utility
