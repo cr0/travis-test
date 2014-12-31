@@ -10,3 +10,6 @@ before_install:
 install:
   - ls -al .
   - find src/main/resources/org/syncany/gui/helper/
+
+scripts:
+  - echo "ok"
