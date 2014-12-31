@@ -1,15 +1,16 @@
-language: java
+language: objective-c
 
-notifications:
+notification:
   - email: false
 
 before_install:
+  # osx helper utility
+  - python --version && pip --version
+  - sudo pip install --egg py2app
+  - python gradle/osx/utility/setup.py py2app
   - mkdir -p src/main/resources/org/syncany/gui/helper/
-  - ls -al .
+  - tar cfvz src/main/resources/org/syncany/gui/helper/Syncany.app.tar.gz -C dist/ Syncany.app
 
 install:
   - ls -al .
   - find src/main/resources/org/syncany/gui/helper/
-
-scripts:
-  - echo "ok"
