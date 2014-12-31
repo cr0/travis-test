@@ -1,4 +1,6 @@
 language: java
+os:
+  - osx
 
 before_install:
   # osx helper utility
